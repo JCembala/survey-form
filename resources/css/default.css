@@ -17,7 +17,9 @@ header {
 
 label {
     display: flex;
-    text-align: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
 }
 
 form {
@@ -31,12 +33,16 @@ form {
 }
 
 .form-group {
-    margin: 0 auto 0.75rem auto;
+    margin: 0 auto 1.5rem auto;
 }
 
 .form-control {
-    height: 2rem;
+    display: block;
+    height: 2.5rem;
     width: 100%;
     border-radius: 0.25rem;
     padding: 0.3rem 0.7rem;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    box-sizing: border-box;
 }
