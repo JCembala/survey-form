@@ -5,13 +5,38 @@ head {
 body {
     display: block;
     margin: 0 auto;
-}
-
-main {
-    max-width: 750px;
-    margin: 50px auto 0 auto;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 header {
     text-align: center;
+}
+
+label {
+    display: flex;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(138, 150, 150);
+    padding: 2.5rem;
+}
+
+#container {
+    max-width: 750px;
+    margin: 50px auto 0 auto;
+}
+
+.form-group {
+    margin: 0 auto 0.75rem auto;
+}
+
+.form-control {
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.3rem 0.7rem;
 }

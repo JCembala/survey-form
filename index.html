@@ -6,11 +6,18 @@
 </head>
 
 <body>
-    <main id="main">
+    <div id="container">
         <header>
             <h1 id="title">Example Survey Form</h1>
             <p id="description">This survey is an example of my skills so far</p>
         </header>
-    </main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="label-name" for="name">Name</label>
+                <input id="name" class="form-control" type="text" name="name" placeholder="Please enter your name"
+                    required>
+            </div>
+        </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
