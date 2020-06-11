@@ -6,11 +6,108 @@
 </head>
 
 <body>
-    <main id="main">
+    <div id="container">
         <header>
-            <h1 id="title">Example Survey Form</h1>
-            <p id="description">This survey is an example of my skills so far</p>
+            <h1 id="title">Fitness Survey</h1>
+            <p id="description">Thank you for taking the time to complete this survey</p>
         </header>
-    </main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input id="email" class="form-control" type="text" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" class="form-control" type="number" min="10" max="99" name="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label id="dropdown" for="dropdown">Which option best describes your role?</label>
+                <select id="dropdown" class="form-control" type="dropdown" name="role">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="other">Other</option>
+                    <option value="preferNo">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How often are you doing some health activity?</p>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="0" checked>
+                    None
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="1">
+                    Once per week
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="2-3">
+                    2 - 3 times per week
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="4+">
+                    4+ times per week
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What type of activity you do regulary?</p>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="team-games">
+                    Team games eq. football, basketball
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="running">
+                    Running
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="walking">
+                    Walking
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="swimming">
+                    Swimming
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="hiking">
+                    Hiking
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="gym-fitness">
+                    Gym/Fitness
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="other">
+                    Other
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend this survey to your friend?</p>
+                <label>
+                    <input name="user-recommend" type="radio" class="input-radio" value="definietly" checked>
+                    Definietly
+                </label>
+                <label>
+                    <input name="user-recommend" type="radio" class="input-radio" value="maybe">
+                    Maybe
+                </label>
+                <label>
+                    <input name="user-recommend" type="radio" class="input-radio" value="not-sure">
+                    Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Here you can leave any comments or suggestions</p>
+                <textarea id="comments" name="comments" class="input-textarea" placeholder="Enter your comment here..." ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
