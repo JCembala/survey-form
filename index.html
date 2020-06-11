@@ -8,8 +8,8 @@
 <body>
     <div id="container">
         <header>
-            <h1 id="title">Example Survey Form</h1>
-            <p id="description">This survey is an example of my skills so far</p>
+            <h1 id="title">Fitness Survey</h1>
+            <p id="description">Thank you for taking the time to complete this survey</p>
         </header>
         <form id="survey-form">
             <div class="form-group">
@@ -26,14 +26,64 @@
             </div>
             <div class="form-group">
                 <label id="dropdown" for="dropdown">Which option best describes your role?</label>
-                <select id="dropdown" class="form-control" type="dropdown" min="10" max="99" name="role">
+                <select id="dropdown" class="form-control" type="dropdown" name="role">
                     <option disabled selected value>Select current role</option>
                     <option value="student">Student</option>
                     <option value="job">Full Time Job</option>
-                    <option value="lerner">Full Time Lerner</option>
+                    <option value="unemployed">Unemployed</option>
                     <option value="other">Other</option>
                     <option value="preferNo">Prefer not to say</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <p>How often are you doing some health activity?</p>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="0" checked>
+                    None
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="1">
+                    Once per week
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="2-3">
+                    2 - 3 times per week
+                </label>
+                <label>
+                    <input name="user-activity" type="radio" class="input-radio" value="4+">
+                    4+ times per week
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What type of activity you do regulary?</p>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="team-games">
+                    Team games eq. football, basketball
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="running">
+                    Running
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="walking">
+                    Walking
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="swimming">
+                    Swimming
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="hiking">
+                    Hiking
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="gym-fitness">
+                    Gym/Fitness
+                </label>
+                <label>
+                    <input name="activity-type" type="checkbox" class="input-checkbox" value="other">
+                    Other
+                </label>
             </div>
             <div class="form-group">
                 <p>Would you recommend this survey to your friend?</p>
